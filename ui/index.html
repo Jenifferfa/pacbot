@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="copyright" content="Copyright © 2016 I.B.M. All rights reserved.
+
+         Licensed under the Apache License, Version 2.0 (the “License”);
+         you may not use this file except in compliance with the License.
+         You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+         Unless required by applicable law or agreed to in writing, software
+         distributed under the License is distributed on an “AS IS” BASIS,
+         WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+         See the License for the specific language governing permissions and
+         limitations under the License.">
+    <meta name="description" content="Watson Conversation Service Car Dashboard Sample Application">
+    <title>PACBOT</title>
+    <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/tooltip-dialogs.css">
+    <link rel="stylesheet" type="text/css" href="css/conversation.css">
+    <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="css/weather.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <!-- endbuild -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="ct" content="vPWQz9kc-2sDXDdB6m_K5RLm_mwStA0c3cyo">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="dark-overlay" class="overlay"></div>
+    <div id="clear-overlay" class="overlay"></div>
+    <!--The main car dashboard SVG-->
+    <div id="svg_wrapper">
+        <div id="output-audio" class="audio-on" onclick="TTSModule.toggle()" value="ON"></div>
+        <!-- <button id="help" class="tooltip-dialog-btn" onclick="Sidebar.toggle()">What can I ask?</button> -->
+        <div id="svg_size" width='1024' height='704'>
+            <svg id="svg_canvas" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 600 600">
+                <style>
+                    @-webkit-keyframes r12u5cpO1X_rJXpa6OJQ_Animation {
+                        0% {
+                            -webkit-transform: translate(-83px, 0px);
+                            transform: translate(-83px, 0px);
+                        }
+                        20% {
+                            -webkit-transform: translate(0px, 0px);
+                            transform: translate(0px, 0px);
+                        }
+                        30% {
+                            -webkit-transform: translate(0px, -86px);
+                            transform: translate(0px, -86px);
+                        }
+                        50% {
+                            -webkit-transform: translate(-84px, -86px);
+                            transform: translate(-84px, -86px);
+                        }
+                        65% {
+                            -webkit-transform: translate(-84px, -86px);
+                            transform: translate(-84px, -86px);
+                        }
+                        85% {
+                            -webkit-transform: translate(0px, -86px);
+                            transform: translate(0px, -86px);
+                        }
+                        100% {
+                            -webkit-transform: translate(0px, -86px);
+                            transform: translate(0px, -86px);
+                        }
+                    }
+
+                    @keyframes r12u5cpO1X_rJXpa6OJQ_Animation {
+                        0% {
+                            -webkit-transform: translate(-83px, 0px);
+                            transform: translate(-83px, 0px);
+                        }
+                        20% {
+                            -webkit-transform: translate(0px, 0px);
+                            transform: translate(0px, 0px);
+                        }
+                        30% {
+                            -webkit-transform: translate(0px, -86px);
+                            transform: translate(0px, -86px);
+                        }
+                        50% {
+                            -webkit-transform: translate(-84px, -86px);
+                            transform: translate(-84px, -86px);
+                        }
+                        65% {
+                            -webkit-transform: translate(-84px, -86px);
+                            transform: translate(-84px, -86px);
+                        }
+                        85% {
+                            -webkit-transform: translate(0px, -86px);
+                            transform: translate(0px, -86px);
+                        }
+                        100% {
+                            -webkit-transform: translate(0px, -86px);
+                            transform: translate(0px, -86px);
+                        }
+                    }
+
+                    @-webkit-keyframes Sy8u59p_17_BJyppa_17_Animation {
+                        0% {
+                            -webkit-transform: translate(-83px, 0px);
+                            transform: translate(-83px, 0px);
+                        }
+                        20% {
+                            -webkit-transform: translate(0px, 0px);
+                            transform: translate(0px, 0px);
+                        }
+                        30% {
+                            -webkit-transform: translate(0px, -86px);
+                            transform: translate(0px, -86px);
+                        }
+                        50% {
+                            -webkit-transform: translate(-84px, -86px);
+                            transform: translate(-84px, -86px);
+                        }
+                        65% {
+                            -webkit-transform: translate(-84px, -86px);
+                            transform: translate(-84px, -86px);
+                        }
+                        85% {
+                            -webkit-transform: translate(0px, -86px);
+                            transform: translate(0px, -86px);
+                        }
+                        100% {
+                            -webkit-transform: translate(0px, -86px);
+                            transform: translate(0px, -86px);
+                        }
+                    }
+
+                    @keyframes Sy8u59p_17_BJyppa_17_Animation {
+                        0% {
+                            -webkit-transform: translate(-83px, 0px);
+                            transform: translate(-83px, 0px);
+                        }
+                        20% {
+                            -webkit-transform: translate(0px, 0px);
+                            transform: translate(0px, 0px);
+                        }
+                        30% {
+                            -webkit-transform: translate(0px, -86px);
+                            transform: translate(0px, -86px);
+                        }
+                        50% {
+                            -webkit-transform: translate(-84px, -86px);
+                            transform: translate(-84px, -86px);
+                        }
+                        65% {
+                            -webkit-transform: translate(-84px, -86px);
+                            transform: translate(-84px, -86px);
+                        }
+                        85% {
+                            -webkit-transform: translate(0px, -86px);
+                            transform: translate(0px, -86px);
+                        }
+                        100% {
+                            -webkit-transform: translate(0px, -86px);
+                            transform: translate(0px, -86px);
+                        }
+                    }
+
+                    #svg_canvas * {
+                        -webkit-animation-duration: 10s;
+                        animation-duration: 10s;
+                        -webkit-animation-iteration-count: infinite;
+                        animation-iteration-count: infinite;
+                        -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+                        animation-timing-function: cubic-bezier(0, 0, 1, 1);
+                    }
+
+                    #rJ7uq5p_1Q {
+                        opacity: 1;
+                        fill: #ffffff;
+                        fill-opacity: 1;
+                    }
+
+                    #rySOqqauy7 {
+                        opacity: 1;
+                        fill-opacity: 0;
+                        stroke: #030901;
+                        stroke-width: 1;
+                        stroke-opacity: 1;
+                    }
+
+                    #Hkv_cc6OkQ {
+                        opacity: 1;
+                        fill: #58ec13;
+                        fill-opacity: 1;
+                    }
+
+                    #ByKdc5p_k7 {
+                        opacity: 1;
+                        fill: #ffffff;
+                        fill-opacity: 1;
+                    }
+
+                    #Hkiuc9TuyQ {
+                        opacity: 1;
+                        fill-opacity: 0;
+                        stroke: #030901;
+                        stroke-width: 1;
+                        stroke-opacity: 1;
+                    }
+
+                    #rka_5c6OJ7 {
+                        opacity: 1;
+                        fill: #58ec13;
+                        fill-opacity: 1;
+                    }
+
+                    #Sy8u59p_17_BJyppa_17 {
+                        -webkit-transform-origin: 50% 50%;
+                        transform-origin: 50% 50%;
+                        transform-box: fill-box;
+                        -webkit-transform: translate(-83px, 0px);
+                        transform: translate(-83px, 0px);
+                        -webkit-animation-name: Sy8u59p_17_BJyppa_17_Animation;
+                        animation-name: Sy8u59p_17_BJyppa_17_Animation;
+                    }
+
+                    #r12u5cpO1X_rJXpa6OJQ {
+                        -webkit-transform-origin: 50% 50%;
+                        transform-origin: 50% 50%;
+                        transform-box: fill-box;
+                        -webkit-transform: translate(-83px, 0px);
+                        transform: translate(-83px, 0px);
+                        -webkit-animation-name: r12u5cpO1X_rJXpa6OJQ_Animation;
+                        animation-name: r12u5cpO1X_rJXpa6OJQ_Animation;
+                    }
+                </style>
+                <defs>
+                    <path d="M283.68 144.93L284.08 317.75L241.65 317.85L241.65 355.81L156.02 355.81L156.02 318.04L113.99 318.14L113.59 145.32L156.02 145.22L156.02 104.19L241.65 104.19L241.65 145.03L283.68 144.93Z"
+                        id="a5or4ciIPz" />
+                    <path d="M197.45 231.46L282.88 231.46L282.88 317.19L197.45 317.19L197.45 231.46Z" id="k47YX0tEn1" />
+                    <path d="M546.01 144.93L546.41 317.75L503.98 317.85L503.98 355.81L418.35 355.81L418.35 318.04L376.32 318.14L375.92 145.32L418.35 145.22L418.35 104.19L503.98 104.19L503.98 145.03L546.01 144.93Z"
+                        id="bgrMB3CBh" />
+                    <path d="M459.73 231.46L545.17 231.46L545.17 317.19L459.73 317.19L459.73 231.46Z" id="aE0aiHyG7" />
+                </defs>
+                <g id="H1gO55pO1Q">
+                    <g id="HyWu9qpdkQ">
+                        <g id="SyGu95a_JX">
+                            <use xlink:href="#a5or4ciIPz" id="rJ7uq5p_1Q" />
+                            <g id="SJNO9cauk7">
+                                <use xlink:href="#a5or4ciIPz" id="rySOqqauy7" />
+                            </g>
+                        </g>
+                        <g id="Sy8u59p_17_BJyppa_17" data-animator-group="true" data-animator-type="0">
+                            <g id="Sy8u59p_17">
+                                <use xlink:href="#k47YX0tEn1" id="Hkv_cc6OkQ" />
+                            </g>
+                        </g>
+                        <g id="SJ_O5qp_1m">
+                            <use xlink:href="#bgrMB3CBh" id="ByKdc5p_k7" />
+                            <g id="ryc_5ca_Jm">
+                                <use xlink:href="#bgrMB3CBh" id="Hkiuc9TuyQ" />
+                            </g>
+                        </g>
+                        <g id="r12u5cpO1X_rJXpa6OJQ" data-animator-group="true" data-animator-type="0">
+                            <g id="r12u5cpO1X">
+                                <use xlink:href="#aE0aiHyG7" id="rka_5c6OJ7" />
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <script type="javascript">
+                    (function(){var a=document.querySelector('#svg_size'),b=a.querySelectorAll('style'),c=function(d){b.forEach(function(f){var g=f.textContent;g&amp;&amp;(f.textContent=g.replace(/transform-box:[^;\r\n]*/gi,'transform-box: '+d))})};c('initial'),window.requestAnimationFrame(function(){return c('fill-box')})})();
+                </script>
+            </svg>
+        </div>
+        <div class="chatUi">
+            <div id="chat-scroll-wrapper">
+                <div id="chat-flow"></div>
+            </div>
+            <div id="input-wrapper" class="responsive-columns-wrapper">
+                <div id="input-mic-holder">
+                    <div id="input-mic" class="inactive-mic" onclick="STTModule.micON()"></div>
+                </div>
+
+                <label for="user-input" class="input-outline responsive-column">
+                    <input id="user-input" type="text" placeholder="Type something, e.g. “Turn the headlights on”">
+                </label>
+            </div>
+        </div>
+        <div id="tooltip-dialog-list"></div>
+        <div id="sidebar">
+            <div class="close-div" onclick="Sidebar.toggle()">
+                <img src="images/close-button.png" class="close" alt="close" />
+            </div>
+            <p class="pre-bar">I’m trained on these topics:</p>
+            <ul id="suggestion-list"></ul>
+        </div>
+    </div>
+
+    <script>
+        // For cloaking. Done in JS for the case of disabled JS (i.e. even though not much will work, something will be displayed.)
+        document.body.style.visibility = 'hidden';
+    </script>
+    <!-- build:js vendor.min.js -->
+    <script src="js/libs/snap.svg.js"></script>
+    <script src="./../node_modules/whatwg-fetch/fetch.js"></script>
+    <!-- endbuild -->
+    <!-- build:js dashboard.min.js -->
+    <script src="js/common.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/tooltip-dialogs.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/panel.js"></script>
+    <script src="js/conversation.js"></script>
+    <script src="js/conversationResponse.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/ui_tests/tests.js"></script>
+    <!-- endbuild -->
+    <script src="ibm/watson-speech.min.js"></script>
+    <script src="ibm/speech-to-text.js"></script>
+    <script src="ibm/text-to-speech.js"></script>
+</body>
+
+</html>

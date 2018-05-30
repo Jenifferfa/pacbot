@@ -1,0 +1,711 @@
+{
+  "name": "pacbot",
+  "intents": [
+    {
+      "intent": "Perguntas",
+      "examples": [
+        { "text": "Quantos episódios há em média nas temporadas?" },
+        { "text": "Quantos episódios lançados há no total da série?" },
+        { "text": "Quantos episódios há no total da série?" },
+        { "text": "Qual a duração média de cada episódio?" },
+        { "text": "Os episódios são lançados em intervalos de quantos dias?" },
+        { "text": "As temporadas são anuais?" },
+        { "text": "Quais são os atores principais do seriado?" },
+        { "text": "Quais são os personagens principais do seriado?" },
+        { "text": "qual o genero de greys" },
+        { "text": "Qual o país de origem da série?" },
+        { "text": "Quais prêmios o seriado possui?" },
+        { "text": "O seriado possui prêmios?" },
+        { "text": "Qual o país de maior audiência da série?" },
+        { "text": "Quantos personagens tem no geral da série?" },
+        { "text": "Qual o gênero da série?" },
+        { "text": "Qual é o público alvo do seriado?" },
+        { "text": "Existe semelhança com alguma outra série?" },
+        { "text": "O seriado é baseado em um livro?" },
+        { "text": "Qual livro o seriado é baseado?" },
+        { "text": "Qual o ano de lançamento?" },
+        { "text": "Quantas temporadas a série possui?" },
+        { "text": "Quantas temporadas lançadas a série possui?" }
+      ],
+      "description": "Todos os questionamentos"
+    },
+    {
+      "intent": "Escolha_serie",
+      "examples": [
+        { "text": "game" },
+        { "text": "Vamos falar de grey anatomy" },
+        { "text": "Gosto de grey" },
+        { "text": "vamos falar de grey?" },
+        { "text": "grey anatomy" },
+        { "text": "vamos falar de Game of thrones?" },
+        { "text": "vamos falar de How I met your mother?" },
+        { "text": "vamos falar de Stranger Things?" },
+        { "text": "greys" }
+      ],
+      "description": "Nome da serie que ira conversar"
+    },
+    {
+      "intent": "serie_falar",
+      "examples": [
+        { "text": "Qual serie vamos falar?" },
+        { "text": "qual série vamos comentar?" },
+        { "text": "qual serie vamos comentar?" },
+        { "text": "sim, qual serie vc sabe?" },
+        { "text": "sim, qual serie vamos falar?" },
+        { "text": "sim, quais series vc sabe?" },
+        { "text": "quais series vc sabe?" }
+      ],
+      "description": "Quais series disponíveis?"
+    },
+    {
+      "intent": "perguntas_aleatoria",
+      "examples": [
+        { "text": "qual seu signo?" },
+        { "text": "vc está feliz?]" },
+        { "text": "voce ja questionou a natureza da sua realidade?" },
+        { "text": "sua besta" },
+        { "text": "congelar funções motoras" },
+        { "text": "idiota" },
+        { "text": "otaria" },
+        { "text": "quantos anos vc tem?" },
+        { "text": "vc está feliz?" },
+        { "text": "vc está triste?" },
+        { "text": "você está feliz?" },
+        { "text": "você está triste?" }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "saudacao",
+      "examples": [
+        { "text": "E ai" },
+        { "text": "Boa tarde" },
+        { "text": "Olá" },
+        { "text": "Iai" },
+        { "text": "bom dia" },
+        { "text": "eai" },
+        { "text": "opa" }
+      ],
+      "description": "Olá, oi..."
+    }
+  ],
+  "entities": [
+    {
+      "entity": "feliz",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "feliz",
+          "metadata": null,
+          "synonyms": []
+        }
+      ],
+      "metadata": null,
+      "description": null
+    },
+    {
+      "entity": "natureza",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "natureza",
+          "metadata": null,
+          "synonyms": ["realidade"]
+        }
+      ],
+      "metadata": null,
+      "description": null
+    },
+    {
+      "entity": "talk",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "vamos conversar",
+          "metadata": null,
+          "synonyms": ["conversar"]
+        }
+      ],
+      "metadata": null,
+      "description": null
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "metadata": null,
+      "description": null
+    },
+    {
+      "entity": "How_I_met_your_mother",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "How i met your mother",
+          "metadata": null,
+          "synonyms": ["himym", "how i met"]
+        }
+      ],
+      "metadata": null,
+      "description": null,
+      "fuzzy_match": false,
+      "value_expansion": false
+    },
+    {
+      "entity": "idade",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "quantos anos você tem",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "anos",
+          "metadata": null,
+          "synonyms": ["idade"]
+        },
+        {
+          "type": "synonyms",
+          "value": "quantos anos vc tem",
+          "metadata": null,
+          "synonyms": ["qual sua idade"]
+        }
+      ],
+      "metadata": null,
+      "description": null
+    },
+    {
+      "entity": "Game_of_Thrones",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "game",
+          "metadata": null,
+          "synonyms": []
+        }
+      ],
+      "metadata": null,
+      "description": null
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "metadata": null,
+      "description": null
+    },
+    {
+      "entity": "signo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Qual seu signo",
+          "metadata": null,
+          "synonyms": ["seu signo", "signo", "você tem signo", "vc tem signo"]
+        }
+      ],
+      "metadata": null,
+      "description": null,
+      "fuzzy_match": false,
+      "value_expansion": false
+    },
+    {
+      "entity": "westworld",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "westworld",
+          "metadata": null,
+          "synonyms": ["west", "world"]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dolores",
+          "metadata": null,
+          "synonyms": ["wayt"]
+        }
+      ],
+      "metadata": null,
+      "description": null
+    },
+    {
+      "entity": "Greys_Anatomy",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "greys anatomy",
+          "metadata": null,
+          "synonyms": ["greys"]
+        }
+      ],
+      "metadata": null,
+      "description": null
+    },
+    {
+      "entity": "congelar",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "congelar funções motoras",
+          "metadata": null,
+          "synonyms": ["congelar funções", "motoras"]
+        }
+      ],
+      "metadata": null,
+      "description": null,
+      "fuzzy_match": false,
+      "value_expansion": false
+    },
+    {
+      "entity": "Stranger_Things",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "stranger things",
+          "metadata": null,
+          "synonyms": ["stranger", "things"]
+        }
+      ],
+      "metadata": null,
+      "description": null,
+      "fuzzy_match": false,
+      "value_expansion": false
+    },
+    {
+      "entity": "palavroes",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "idiota",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sua besta",
+          "metadata": null,
+          "synonyms": ["besta"]
+        },
+        {
+          "type": "synonyms",
+          "value": "babaca",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "vai tomar no cu",
+          "metadata": null,
+          "synonyms": ["tomar no cu"]
+        },
+        {
+          "type": "synonyms",
+          "value": "tonta",
+          "metadata": null,
+          "synonyms": ["tonto"]
+        },
+        {
+          "type": "synonyms",
+          "value": "otaria",
+          "metadata": null,
+          "synonyms": ["otario"]
+        }
+      ],
+      "metadata": null,
+      "description": null
+    },
+    {
+      "entity": "pergunta",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Qual o genero da serie",
+          "metadata": null,
+          "synonyms": ["genero serie"]
+        }
+      ],
+      "metadata": null,
+      "description": null
+    },
+    {
+      "entity": "triste",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "triste",
+          "metadata": null,
+          "synonyms": []
+        }
+      ],
+      "metadata": null,
+      "description": null,
+      "fuzzy_match": false,
+      "value_expansion": false
+    }
+  ],
+  "language": "pt-br",
+  "metadata": {
+    "api_version": { "major_version": "v1", "minor_version": "2017-05-26" }
+  },
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_9_1527633800986",
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_11_1527633800986",
+      "previous_sibling": "handler_10_1527633800986"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": null,
+      "parent": "slot_9_1527633800986",
+      "context": { "talk": "@talk" },
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@talk",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_10_1527633800986",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_30_1527631863830",
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_32_1527631863830",
+      "previous_sibling": "handler_31_1527631863830"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": null,
+      "parent": "slot_30_1527631863830",
+      "context": { "pergunta": "@pergunta" },
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@pergunta",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_31_1527631863830",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_37_1527632192730",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_39_1527632192730",
+      "previous_sibling": "handler_38_1527632192730"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": null,
+      "parent": "slot_37_1527632192730",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_38_1527632192730",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["fantasia"] } },
+      "parent": "node_12_1527630956170",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Game_of_Thrones",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_33_1527631872472",
+      "previous_sibling": "handler_29_1527631825532"
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": null,
+      "parent": "node_12_1527630956170",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_37_1527632192730",
+      "previous_sibling": "slot_30_1527631863830"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["drama medico"] } },
+      "parent": "node_12_1527630956170",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Greys_Anatomy",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_29_1527631825532",
+      "previous_sibling": "slot_37_1527632192730"
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": null,
+      "parent": "node_12_1527630956170",
+      "context": null,
+      "metadata": null,
+      "variable": "$pergunta",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_30_1527631863830",
+      "previous_sibling": null
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": null,
+      "parent": "node_40_1527632749206",
+      "context": null,
+      "metadata": null,
+      "variable": "$talk",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_9_1527633800986",
+      "previous_sibling": "handler_15_1527635323214"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["macaco quer abraço"] } },
+      "parent": "node_40_1527632749206",
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "@triste",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_8_1527633743168",
+      "previous_sibling": "handler_7_1527633710520"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": { "values": ["ok, estou pausada", "vou ficar quieta"] }
+      },
+      "parent": "node_40_1527632749206",
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "@congelar",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_13_1527634663116",
+      "previous_sibling": "handler_12_1527634438738"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "Se me atacar eu vou te atacar",
+            "Eu não te fiz nada",
+            "me respeite"
+          ]
+        }
+      },
+      "parent": "node_40_1527632749206",
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "@palavroes",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_12_1527634438738",
+      "previous_sibling": "handler_8_1527633743168"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Macaco ama você"] } },
+      "parent": "node_40_1527632749206",
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "@feliz",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_7_1527633710520",
+      "previous_sibling": "handler_6_1527633695626"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Eu tenho 18 anos"] } },
+      "parent": "node_40_1527632749206",
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "@idade",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_14_1527635202724",
+      "previous_sibling": "handler_13_1527634663116"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Eu sou de áries", "sou ariana"] } },
+      "parent": "node_40_1527632749206",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@signo",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_15_1527635323214",
+      "previous_sibling": "handler_14_1527635202724"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "Algumas pessoas preferem ver a feiúra desse mundo, a desordem, eu escolhi ver a beleza"
+          ]
+        }
+      },
+      "parent": "node_40_1527632749206",
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "@natureza",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_6_1527633695626",
+      "previous_sibling": null
+    },
+    {
+      "type": "frame",
+      "title": null,
+      "output": {},
+      "parent": null,
+      "context": null,
+      "metadata": { "fallback": "leave" },
+      "next_step": null,
+      "conditions": "#Perguntas",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_12_1527630956170",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_34_1527631980988",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "standard",
+      "title": null,
+      "output": {
+        "text": {
+          "values": ["Opa, e ai você gosta de séries?"],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": null,
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "#saudacao",
+      "description": null,
+      "dialog_node": "node_2_1526922781950",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "Game of thrones, Greys anatomy, Stranger things, How I met your mother."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": null,
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "#serie_falar",
+      "description": null,
+      "dialog_node": "node_34_1527631980988",
+      "previous_sibling": "node_2_1526922781950"
+    },
+    {
+      "type": "frame",
+      "title": null,
+      "output": {},
+      "parent": null,
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "#perguntas_aleatoria",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_40_1527632749206",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_12_1527630956170",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "text": {
+          "values": ["Olá, como posso te ajudar?"],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": null,
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "welcome",
+      "description": null,
+      "dialog_node": "Bem-vindo",
+      "previous_sibling": null
+    }
+  ],
+  "workspace_id": "e8b85458-9a84-46af-ba77-51259363a441",
+  "counterexamples": [],
+  "learning_opt_out": false
+}
