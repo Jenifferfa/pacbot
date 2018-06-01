@@ -20,10 +20,11 @@ const watson = require('watson-developer-cloud'); // watson sdk
 const conversation = new watson.ConversationV1({
   // If unspecified here, the ASSISTANT_USERNAME and ASSISTANT_PASSWORD env properties will be checked
   // After that, the SDK will fall back to the bluemix-provided VCAP_SERVICES environment property
-  username: process.env.ASSISTANT_USERNAME || '<username>',
-  password: process.env.ASSISTANT_PASSWORD || '<password>',
+  username:
+    process.env.ASSISTANT_USERNAME || '1a356fbf-67bb-4a39-b690-56648b87b075',
+  password: process.env.ASSISTANT_PASSWORD || '1UJZ7crnuwFI',
   url: 'https://gateway.watsonplatform.net/conversation/api/',
-  version_date: '2018-02-16'
+  version_date: '2018-02-16',
 });
 
 /**
@@ -58,27 +59,27 @@ const updateMessage = (input, response) => {
   return response;
 };
 
-
 module.exports = function(app) {
-
   app.post('/api/message', (req, res, next) => {
-    const workspace = process.env.WORKSPACE_ID || '<workspace-id>';
-    if (!workspace || workspace === '<workspace-id>') {
+    const workspace =
+      process.env.WORKSPACE_ID || 'e8b85458-9a84-46af-ba77-51259363a441';
+    if (!workspace || workspace !== 'e8b85458-9a84-46af-ba77-51259363a441') {
       return res.json({
         output: {
-          text: 'The app has not been configured with a <b>WORKSPACE_ID</b> environment variable. Please refer to the ' +
+          text:
+            'The app has not been configured with a <b>WORKSPACE_ID</b> environment variable. Please refer to the ' +
             '<a href="https://github.com/watson-developer-cloud/conversation-simple">README</a> ' +
             'documentation on how to set this variable. <br>' +
             'Once a workspace has been defined the intents may be imported from ' +
             '<a href="https://github.com/watson-developer-cloud/conversation-simple/blob/master/training/car_workspace.json">here</a> ' +
-            'in order to get a working application.'
-        }
+            'in order to get a working application.',
+        },
       });
     }
     const payload = {
       workspace_id: workspace,
       context: req.body.context || {},
-      input: req.body.input || {}
+      input: req.body.input || {},
     };
 
     // Send the input to the conversation service

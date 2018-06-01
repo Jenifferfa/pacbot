@@ -17,8 +17,10 @@
 const watson = require('watson-developer-cloud');
 
 const authorizationService = new watson.AuthorizationV1({
-  username: process.env.SPEECH_TO_TEXT_USERNAME || '<username>',
-  password: process.env.SPEECH_TO_TEXT_PASSWORD || '<password>',
+  username:
+    process.env.SPEECH_TO_TEXT_USERNAME ||
+    '6e7f8d74-f822-49c2-9a8f-534e4d9cabe1',
+  password: process.env.SPEECH_TO_TEXT_PASSWORD || 'Y8Kxv68NLjQ3',
   url: watson.SpeechToTextV1.URL,
 });
 
