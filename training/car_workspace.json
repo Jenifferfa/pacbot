@@ -2,53 +2,106 @@
   "name": "pacbot",
   "intents": [
     {
-      "intent": "Perguntas",
-      "examples": [
-        { "text": "Quantos episódios há em média nas temporadas?" },
-        { "text": "Quantos episódios lançados há no total da série?" },
-        { "text": "Quantos episódios há no total da série?" },
-        { "text": "Qual a duração média de cada episódio?" },
-        { "text": "Os episódios são lançados em intervalos de quantos dias?" },
-        { "text": "As temporadas são anuais?" },
-        { "text": "Quais são os atores principais do seriado?" },
-        { "text": "Quais são os personagens principais do seriado?" },
-        { "text": "qual o genero de greys" },
-        { "text": "Qual o país de origem da série?" },
-        { "text": "Quais prêmios o seriado possui?" },
-        { "text": "O seriado possui prêmios?" },
-        { "text": "Qual o país de maior audiência da série?" },
-        { "text": "Quantos personagens tem no geral da série?" },
-        { "text": "Qual o gênero da série?" },
-        { "text": "Qual é o público alvo do seriado?" },
-        { "text": "Existe semelhança com alguma outra série?" },
-        { "text": "O seriado é baseado em um livro?" },
-        { "text": "Qual livro o seriado é baseado?" },
-        { "text": "Qual o ano de lançamento?" },
-        { "text": "Quantas temporadas a série possui?" },
-        { "text": "Quantas temporadas lançadas a série possui?" }
-      ],
-      "description": "Todos os questionamentos"
+      "intent": "Pergunta05",
+      "examples": [{ "text": "Qual livro o seriado é baseado?" }],
+      "description": "Qual livro o seriado é baseado?"
     },
     {
-      "intent": "Escolha_serie",
+      "intent": "pergunta01",
       "examples": [
-        { "text": "game" },
-        { "text": "Vamos falar de grey anatomy" },
-        { "text": "Gosto de grey" },
-        { "text": "vamos falar de grey?" },
-        { "text": "grey anatomy" },
-        { "text": "vamos falar de Game of thrones?" },
-        { "text": "vamos falar de How I met your mother?" },
-        { "text": "vamos falar de Stranger Things?" },
-        { "text": "greys" }
+        { "text": "Qual o genero da serie?" },
+        { "text": "genero serie" }
       ],
-      "description": "Nome da serie que ira conversar"
+      "description": "Qual o genero da serie?"
+    },
+    {
+      "intent": "pergunta10",
+      "examples": [
+        { "text": "duração dos episodios" },
+        { "text": "Qual a duração média de cada episódio?" }
+      ],
+      "description": "Qual a duração média de cada episódio?"
+    },
+    {
+      "intent": "pergunta03",
+      "examples": [
+        { "text": "semelhança com outra série" },
+        { "text": "semelhança" },
+        { "text": "Existe semelhança com alguma outra série?" }
+      ],
+      "description": "Existe semelhança com alguma outra série?"
+    },
+    {
+      "intent": "pergunta12",
+      "examples": [
+        { "text": "personagens principais" },
+        { "text": "Quais são os personagens principais do seriado?" }
+      ],
+      "description": "Quais são os personagens principais do seriado?"
+    },
+    {
+      "intent": "pergunta09",
+      "examples": [
+        { "text": "episodios total" },
+        { "text": "numero de episodio" },
+        { "text": "Quantos episódios há no total da série?" }
+      ],
+      "description": "Quantos episódios há no total da série?"
+    },
+    {
+      "intent": "pergunta11",
+      "examples": [
+        { "text": "Quais são os atores principais do seriado?" },
+        { "text": "atores e atriz principal" }
+      ],
+      "description": "Quais são os atores principais do seriado?"
+    },
+    {
+      "intent": "pergunta06",
+      "examples": [
+        { "text": "ano de lançamento" },
+        { "text": "Qual o ano de lançamento?" },
+        { "text": "ano de lancamento" },
+        { "text": "lançamento" }
+      ],
+      "description": "Qual o ano de lançamento?"
+    },
+    {
+      "intent": "pergunta04",
+      "examples": [
+        { "text": "baseada em livro" },
+        { "text": "O seriado é baseado em um livro?" },
+        { "text": "baseado em livro" }
+      ],
+      "description": "O seriado é baseado em um livro?"
+    },
+    {
+      "intent": "pergunta15",
+      "examples": [{ "text": "Quais prêmios o seriado possui?" }],
+      "description": "Quais prêmios o seriado possui?"
+    },
+    {
+      "intent": "pergunta07",
+      "examples": [
+        { "text": "numero de temporadas" },
+        { "text": "temporadas possui" },
+        { "text": "Quantas temporadas a série possui?" }
+      ],
+      "description": "Quantas temporadas a série possui?"
+    },
+    {
+      "intent": "pergunta16",
+      "examples": [
+        { "text": "Qual o país de origem da série?" },
+        { "text": "pais de origem" }
+      ],
+      "description": "Qual o país de origem da série?"
     },
     {
       "intent": "serie_falar",
       "examples": [
-        { "text": "Qual serie vamos falar?" },
         { "text": "qual série vamos comentar?" },
+        { "text": "Qual serie vamos falar?" },
         { "text": "qual serie vamos comentar?" },
         { "text": "sim, qual serie vc sabe?" },
         { "text": "sim, qual serie vamos falar?" },
@@ -58,35 +111,74 @@
       "description": "Quais series disponíveis?"
     },
     {
+      "intent": "pergunta02",
+      "examples": [
+        { "text": "publico alvo" },
+        { "text": "publico da serie" },
+        { "text": "publico" },
+        { "text": "Qual é o público alvo do seriado?" }
+      ],
+      "description": "Qual é o público alvo do seriado?"
+    },
+    {
       "intent": "perguntas_aleatoria",
       "examples": [
-        { "text": "qual seu signo?" },
-        { "text": "vc está feliz?]" },
-        { "text": "voce ja questionou a natureza da sua realidade?" },
-        { "text": "sua besta" },
-        { "text": "congelar funções motoras" },
-        { "text": "idiota" },
-        { "text": "otaria" },
         { "text": "quantos anos vc tem?" },
-        { "text": "vc está feliz?" },
-        { "text": "vc está triste?" },
+        { "text": "otaria" },
+        { "text": "idiota" },
+        { "text": "congelar funções motoras" },
+        { "text": "sua besta" },
+        { "text": "voce ja questionou a natureza da sua realidade?" },
+        { "text": "vc está feliz?]" },
+        { "text": "você está triste?" },
         { "text": "você está feliz?" },
-        { "text": "você está triste?" }
+        { "text": "vc está triste?" },
+        { "text": "vc está feliz?" },
+        { "text": "Filha da puta" },
+        { "text": "vai toma no cu" },
+        { "text": "sua idade" },
+        { "text": "qual seu signo?" }
       ],
       "description": ""
     },
     {
+      "intent": "pergunta14",
+      "examples": [
+        { "text": "possui premios?" },
+        { "text": "O seriado possui prêmios?" },
+        { "text": "premios" }
+      ],
+      "description": "O seriado possui prêmios?"
+    },
+    {
       "intent": "saudacao",
       "examples": [
-        { "text": "E ai" },
-        { "text": "Boa tarde" },
         { "text": "Olá" },
         { "text": "Iai" },
         { "text": "bom dia" },
         { "text": "eai" },
-        { "text": "opa" }
+        { "text": "opa" },
+        { "text": "E ai" },
+        { "text": "Boa tarde" }
       ],
       "description": "Olá, oi..."
+    },
+    {
+      "intent": "pergunta08",
+      "examples": [
+        { "text": "tem quantos episodio" },
+        { "text": "episodios possui" },
+        { "text": "Quantos episódios há em média nas temporadas?" }
+      ],
+      "description": "Quantos episódios há em média nas temporadas?"
+    },
+    {
+      "intent": "pergunta13",
+      "examples": [
+        { "text": "Qual o país de maior audiência da série?" },
+        { "text": "pais de maior audiencia" }
+      ],
+      "description": "Qual o país de maior audiência da série?"
     }
   ],
   "entities": [
@@ -117,21 +209,21 @@
       "description": null
     },
     {
-      "entity": "talk",
-      "values": [
-        {
-          "type": "synonyms",
-          "value": "vamos conversar",
-          "metadata": null,
-          "synonyms": ["conversar"]
-        }
-      ],
+      "entity": "sys-date",
+      "values": [],
       "metadata": null,
       "description": null
     },
     {
-      "entity": "sys-date",
-      "values": [],
+      "entity": "pacbot",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "pacbot",
+          "metadata": null,
+          "synonyms": []
+        }
+      ],
       "metadata": null,
       "description": null
     },
@@ -155,9 +247,9 @@
       "values": [
         {
           "type": "synonyms",
-          "value": "quantos anos você tem",
+          "value": "quantos anos vc tem",
           "metadata": null,
-          "synonyms": []
+          "synonyms": ["qual sua idade"]
         },
         {
           "type": "synonyms",
@@ -167,22 +259,29 @@
         },
         {
           "type": "synonyms",
-          "value": "quantos anos vc tem",
+          "value": "quantos anos você tem",
           "metadata": null,
-          "synonyms": ["qual sua idade"]
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "idade",
+          "metadata": null,
+          "synonyms": []
         }
       ],
       "metadata": null,
-      "description": null
+      "description": null,
+      "fuzzy_match": true
     },
     {
       "entity": "Game_of_Thrones",
       "values": [
         {
           "type": "synonyms",
-          "value": "game",
+          "value": "game of thrones",
           "metadata": null,
-          "synonyms": []
+          "synonyms": ["game", "thrones"]
         }
       ],
       "metadata": null,
@@ -208,25 +307,6 @@
       "description": null,
       "fuzzy_match": false,
       "value_expansion": false
-    },
-    {
-      "entity": "westworld",
-      "values": [
-        {
-          "type": "synonyms",
-          "value": "westworld",
-          "metadata": null,
-          "synonyms": ["west", "world"]
-        },
-        {
-          "type": "synonyms",
-          "value": "Dolores",
-          "metadata": null,
-          "synonyms": ["wayt"]
-        }
-      ],
-      "metadata": null,
-      "description": null
     },
     {
       "entity": "Greys_Anatomy",
@@ -276,9 +356,9 @@
       "values": [
         {
           "type": "synonyms",
-          "value": "idiota",
+          "value": "vai tomar no cu",
           "metadata": null,
-          "synonyms": []
+          "synonyms": ["tomar no cu"]
         },
         {
           "type": "synonyms",
@@ -288,15 +368,15 @@
         },
         {
           "type": "synonyms",
-          "value": "babaca",
+          "value": "idiota",
           "metadata": null,
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "vai tomar no cu",
+          "value": "otaria",
           "metadata": null,
-          "synonyms": ["tomar no cu"]
+          "synonyms": ["otario"]
         },
         {
           "type": "synonyms",
@@ -306,9 +386,15 @@
         },
         {
           "type": "synonyms",
-          "value": "otaria",
+          "value": "babaca",
           "metadata": null,
-          "synonyms": ["otario"]
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "filha da puta",
+          "metadata": null,
+          "synonyms": []
         }
       ],
       "metadata": null,
@@ -316,14 +402,7 @@
     },
     {
       "entity": "pergunta",
-      "values": [
-        {
-          "type": "synonyms",
-          "value": "Qual o genero da serie",
-          "metadata": null,
-          "synonyms": ["genero serie"]
-        }
-      ],
+      "values": [],
       "metadata": null,
       "description": null
     },
@@ -353,6 +432,260 @@
       "type": "event_handler",
       "title": null,
       "output": {},
+      "parent": "slot_53_1527793771427",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_55_1527793771427",
+      "previous_sibling": "handler_54_1527793771427"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": null,
+      "parent": "slot_53_1527793771427",
+      "context": { "pergunta": "@pergunta" },
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@pergunta",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_54_1527793771427",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["game of teste"] } },
+      "parent": "slot_2_1527775678382",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Game_of_Thrones",
+      "event_name": "filled",
+      "description": null,
+      "dialog_node": "handler_11_1527776399846",
+      "previous_sibling": "handler_7_1527776111710"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["stranger resposta"] } },
+      "parent": "slot_2_1527775678382",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Stranger_Things",
+      "event_name": "filled",
+      "description": null,
+      "dialog_node": "handler_22_1527777435058",
+      "previous_sibling": "handler_21_1527777413010"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["how i met teste"] } },
+      "parent": "slot_2_1527775678382",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@How_I_met_your_mother",
+      "event_name": "filled",
+      "description": null,
+      "dialog_node": "handler_21_1527777413010",
+      "previous_sibling": "handler_11_1527776399846"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["é greys teste"] } },
+      "parent": "slot_2_1527775678382",
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "@Greys_Anatomy",
+      "event_name": "filled",
+      "description": null,
+      "dialog_node": "handler_7_1527776111710",
+      "previous_sibling": "handler_3_1527775678382"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_2_1527775678382",
+      "context": { "pergunta": "@pergunta" },
+      "metadata": {},
+      "next_step": null,
+      "conditions": "@pergunta",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_3_1527775678382",
+      "previous_sibling": "handler_4_1527775678382"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": null,
+      "parent": "slot_2_1527775678382",
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_4_1527775678382",
+      "previous_sibling": null
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": {},
+      "parent": "node_1_1527775661864",
+      "context": null,
+      "metadata": { "_customization": { "mcr": true } },
+      "variable": "$pergunta",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_2_1527775678382",
+      "previous_sibling": "handler_18_1527793466068"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Ficção científica e Terror"] } },
+      "parent": "node_1_1527775661864",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Stranger_Things",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_18_1527793466068",
+      "previous_sibling": "handler_17_1527793441758"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Drama médico"] } },
+      "parent": "node_1_1527775661864",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Greys_Anatomy",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_16_1527793416172",
+      "previous_sibling": "handler_15_1527793402566"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": { "values": ["Comédia romântica e Comédia dramática"] }
+      },
+      "parent": "node_1_1527775661864",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@How_I_met_your_mother",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_17_1527793441758",
+      "previous_sibling": "handler_16_1527793416172"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Fantasia"] } },
+      "parent": "node_1_1527775661864",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Game_of_Thrones",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_15_1527793402566",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["40 a 50 minutos"] } },
+      "parent": "node_6_1527793056993",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Stranger_Things",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_91_1527794128411",
+      "previous_sibling": "handler_90_1527794122371"
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": null,
+      "parent": "node_6_1527793056993",
+      "context": null,
+      "metadata": null,
+      "variable": "$pergunta",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_47_1527793760724",
+      "previous_sibling": "handler_91_1527794128411"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["40 a 50 minutos"] } },
+      "parent": "node_6_1527793056993",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Greys_Anatomy",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_89_1527794118044",
+      "previous_sibling": "handler_88_1527794112360"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["25 minutos em media"] } },
+      "parent": "node_6_1527793056993",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@How_I_met_your_mother",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_90_1527794122371",
+      "previous_sibling": "handler_89_1527794118044"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["50 a 60 minutos"] } },
+      "parent": "node_6_1527793056993",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Game_of_Thrones",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_88_1527794112360",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
       "parent": "slot_9_1527633800986",
       "context": null,
       "metadata": {},
@@ -366,12 +699,12 @@
     {
       "type": "event_handler",
       "title": null,
-      "output": null,
+      "output": {},
       "parent": "slot_9_1527633800986",
-      "context": { "talk": "@talk" },
-      "metadata": null,
+      "context": { "pergunta": "@pergunta" },
+      "metadata": {},
       "next_step": null,
-      "conditions": "@talk",
+      "conditions": "@pergunta",
       "event_name": "input",
       "description": null,
       "dialog_node": "handler_10_1527633800986",
@@ -380,122 +713,1277 @@
     {
       "type": "event_handler",
       "title": null,
-      "output": {},
-      "parent": "slot_30_1527631863830",
-      "context": null,
-      "metadata": {},
-      "next_step": null,
-      "conditions": null,
-      "event_name": "focus",
-      "description": null,
-      "dialog_node": "handler_32_1527631863830",
-      "previous_sibling": "handler_31_1527631863830"
-    },
-    {
-      "type": "event_handler",
-      "title": null,
-      "output": null,
-      "parent": "slot_30_1527631863830",
-      "context": { "pergunta": "@pergunta" },
-      "metadata": null,
-      "next_step": null,
-      "conditions": "@pergunta",
-      "event_name": "input",
-      "description": null,
-      "dialog_node": "handler_31_1527631863830",
-      "previous_sibling": null
-    },
-    {
-      "type": "event_handler",
-      "title": null,
-      "output": {},
-      "parent": "slot_37_1527632192730",
+      "output": { "text": { "values": ["Estados Unidos"] } },
+      "parent": "node_9_1527793098698",
       "context": null,
       "metadata": null,
       "next_step": null,
-      "conditions": null,
-      "event_name": "focus",
-      "description": null,
-      "dialog_node": "handler_39_1527632192730",
-      "previous_sibling": "handler_38_1527632192730"
-    },
-    {
-      "type": "event_handler",
-      "title": null,
-      "output": null,
-      "parent": "slot_37_1527632192730",
-      "context": null,
-      "metadata": null,
-      "next_step": null,
-      "conditions": null,
-      "event_name": "input",
-      "description": null,
-      "dialog_node": "handler_38_1527632192730",
-      "previous_sibling": null
-    },
-    {
-      "type": "event_handler",
-      "title": null,
-      "output": { "text": { "values": ["fantasia"] } },
-      "parent": "node_12_1527630956170",
-      "context": null,
-      "metadata": null,
-      "next_step": null,
-      "conditions": "@Game_of_Thrones",
+      "conditions": "@Stranger_Things",
       "event_name": "generic",
       "description": null,
-      "dialog_node": "handler_33_1527631872472",
-      "previous_sibling": "handler_29_1527631825532"
-    },
-    {
-      "type": "slot",
-      "title": null,
-      "output": null,
-      "parent": "node_12_1527630956170",
-      "context": null,
-      "metadata": null,
-      "next_step": null,
-      "conditions": null,
-      "description": null,
-      "dialog_node": "slot_37_1527632192730",
-      "previous_sibling": "slot_30_1527631863830"
+      "dialog_node": "handler_103_1527794284463",
+      "previous_sibling": "handler_102_1527794279057"
     },
     {
       "type": "event_handler",
       "title": null,
-      "output": { "text": { "values": ["drama medico"] } },
-      "parent": "node_12_1527630956170",
+      "output": { "text": { "values": ["Estados Unidos"] } },
+      "parent": "node_9_1527793098698",
       "context": null,
       "metadata": null,
       "next_step": null,
       "conditions": "@Greys_Anatomy",
       "event_name": "generic",
       "description": null,
-      "dialog_node": "handler_29_1527631825532",
-      "previous_sibling": "slot_37_1527632192730"
+      "dialog_node": "handler_101_1527794275254",
+      "previous_sibling": "handler_100_1527794268738"
     },
     {
       "type": "slot",
       "title": null,
       "output": null,
-      "parent": "node_12_1527630956170",
+      "parent": "node_9_1527793098698",
       "context": null,
       "metadata": null,
       "variable": "$pergunta",
       "next_step": null,
       "conditions": null,
       "description": null,
-      "dialog_node": "slot_30_1527631863830",
+      "dialog_node": "slot_56_1527793776345",
+      "previous_sibling": "handler_103_1527794284463"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Estados Unidos"] } },
+      "parent": "node_9_1527793098698",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@How_I_met_your_mother",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_102_1527794279057",
+      "previous_sibling": "handler_101_1527794275254"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Estados Unidos"] } },
+      "parent": "node_9_1527793098698",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Game_of_Thrones",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_100_1527794268738",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_32_1527793725562",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_34_1527793725562",
+      "previous_sibling": "handler_33_1527793725562"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": null,
+      "parent": "slot_32_1527793725562",
+      "context": { "pergunta": "@pergunta" },
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@pergunta",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_33_1527793725562",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["17"] } },
+      "parent": "node_7_1527793061555",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Stranger_Things",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_87_1527794102755",
+      "previous_sibling": "handler_86_1527794089216"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["317"] } },
+      "parent": "node_7_1527793061555",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Greys_Anatomy",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_85_1527794085804",
+      "previous_sibling": "handler_84_1527794081207"
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": null,
+      "parent": "node_7_1527793061555",
+      "context": null,
+      "metadata": null,
+      "variable": "$pergunta",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_44_1527793755174",
+      "previous_sibling": "handler_87_1527794102755"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["272"] } },
+      "parent": "node_7_1527793061555",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@How_I_met_your_mother",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_86_1527794089216",
+      "previous_sibling": "handler_85_1527794085804"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["67"] } },
+      "parent": "node_7_1527793061555",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Game_of_Thrones",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_84_1527794081207",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_59_1527793781485",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_61_1527793781485",
+      "previous_sibling": "handler_60_1527793781485"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": null,
+      "parent": "slot_59_1527793781485",
+      "context": { "pergunta": "@pergunta" },
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@pergunta",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_60_1527793781485",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_6_1527778131856",
+      "context": { "pergunta": "@pergunta" },
+      "metadata": {},
+      "next_step": null,
+      "conditions": "@pergunta",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_7_1527778131856",
+      "previous_sibling": "handler_8_1527778131856"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_6_1527778131856",
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_8_1527778131856",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_38_1527793742189",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_40_1527793742189",
+      "previous_sibling": "handler_39_1527793742189"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": null,
+      "parent": "slot_38_1527793742189",
+      "context": { "pergunta": "@pergunta" },
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@pergunta",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_39_1527793742189",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "Emmy do Primetime, Globo de Ouro, Writers Guild of America, Screen Actors Guild, People's Choice Awards..."
+          ]
+        }
+      },
+      "parent": "node_14_1527793211348",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Greys_Anatomy",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_109_1527794332664",
+      "previous_sibling": "handler_108_1527794325462"
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": null,
+      "parent": "node_14_1527793211348",
+      "context": null,
+      "metadata": null,
+      "variable": "$pergunta",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_62_1527793786610",
+      "previous_sibling": "handler_111_1527794344730"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "incluindo uma indicação ao Emmy para \"Melhor Série de Comédia\", vencido por 30 Rock. Os protagonitas Alyson Hannigan e Neil Patrick Harris tem maior destaque em premiações, ambos já venceram a premiação do People's Choice Awards. Neil Patrick Harris também já recebeu indicação ao Emmy e também ao Globo de Ouro. As categorias de Direção de arte, edição e fotografia também já foram premiadas."
+          ]
+        }
+      },
+      "parent": "node_14_1527793211348",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@How_I_met_your_mother",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_110_1527794336970",
+      "previous_sibling": "handler_109_1527794332664"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "A série foi nomeada a vários prêmios, incluindo duas indicações ao Emmy, ao Globo de Ouro, ao Grammy, e ao Hugo. A série ganhou, em diferentes categorias, os prêmios Emmy, MTV Movie & TV Awards, Screen Actors Guild Awards  Saturn Awards, entre outros."
+          ]
+        }
+      },
+      "parent": "node_14_1527793211348",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Stranger_Things",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_111_1527794344730",
+      "previous_sibling": "handler_110_1527794336970"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "Recordista de indicações, com 23 Game of Thrones ganhou 16 Emmys naquela noite, tornando-se a série mais vencedora da história desta premiação (com 38 estatuetas acumuladas)."
+          ]
+        }
+      },
+      "parent": "node_14_1527793211348",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Game_of_Thrones",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_108_1527794325462",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Sim"] } },
+      "parent": "node_8_1527793093955",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@How_I_met_your_mother",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_106_1527794311303",
+      "previous_sibling": "handler_105_1527794303232"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Sim"] } },
+      "parent": "node_8_1527793093955",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Stranger_Things",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_107_1527794316464",
+      "previous_sibling": "handler_106_1527794311303"
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": null,
+      "parent": "node_8_1527793093955",
+      "context": null,
+      "metadata": null,
+      "variable": "$pergunta",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_59_1527793781485",
+      "previous_sibling": "handler_107_1527794316464"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Sim"] } },
+      "parent": "node_8_1527793093955",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Greys_Anatomy",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_105_1527794303232",
+      "previous_sibling": "handler_104_1527794297754"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Sim"] } },
+      "parent": "node_8_1527793093955",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Game_of_Thrones",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_104_1527794297754",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_65_1527793791064",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_67_1527793791064",
+      "previous_sibling": "handler_66_1527793791064"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": null,
+      "parent": "slot_65_1527793791064",
+      "context": { "pergunta": "@pergunta" },
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@pergunta",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_66_1527793791064",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_56_1527793776345",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_58_1527793776345",
+      "previous_sibling": "handler_57_1527793776345"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": null,
+      "parent": "slot_56_1527793776345",
+      "context": { "pergunta": "@pergunta" },
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@pergunta",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_57_1527793776345",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_47_1527793760724",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_49_1527793760724",
+      "previous_sibling": "handler_48_1527793760724"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": null,
+      "parent": "slot_47_1527793760724",
+      "context": { "pergunta": "@pergunta" },
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@pergunta",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_48_1527793760724",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["2005"] } },
+      "parent": "node_4_1527793033527",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Greys_Anatomy",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_73_1527793968270",
+      "previous_sibling": "handler_72_1527793953658"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["2005"] } },
+      "parent": "node_4_1527793033527",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@How_I_met_your_mother",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_74_1527793974090",
+      "previous_sibling": "handler_73_1527793968270"
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": null,
+      "parent": "node_4_1527793033527",
+      "context": null,
+      "metadata": null,
+      "variable": "$pergunta",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_35_1527793735865",
+      "previous_sibling": "handler_75_1527793979475"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["2016"] } },
+      "parent": "node_4_1527793033527",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Stranger_Things",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_75_1527793979475",
+      "previous_sibling": "handler_74_1527793974090"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["2011"] } },
+      "parent": "node_4_1527793033527",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Game_of_Thrones",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_72_1527793953658",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "Ellen Pompeo, Jessica Capshaw, Sarah Drew, Patrick Dempsey, Justin Chambers, Sandra Oh, Chandra Wilson, Jesse Williaws, Kevin Mckidd."
+          ]
+        }
+      },
+      "parent": "node_11_1527793108511",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Greys_Anatomy",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_93_1527794141666",
+      "previous_sibling": "handler_92_1527794136428"
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": null,
+      "parent": "node_11_1527793108511",
+      "context": null,
+      "metadata": null,
+      "variable": "$pergunta",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_50_1527793765579",
+      "previous_sibling": "handler_95_1527794151865"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "Millie Bobby, Finn Wofrard, Gaten Matarazzo, Caleb McLaughlin, Noah Schnapp, David Harbour, Charlie Heaton."
+          ]
+        }
+      },
+      "parent": "node_11_1527793108511",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Stranger_Things",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_95_1527794151865",
+      "previous_sibling": "handler_94_1527794145480"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "Neil Patrick, Cobie Smulders, Josh Radnor, Alyson Hanngan, Jason Segel, Cristin Milioti"
+          ]
+        }
+      },
+      "parent": "node_11_1527793108511",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@How_I_met_your_mother",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_94_1527794145480",
+      "previous_sibling": "handler_93_1527794141666"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "Sean Bean, Mark Addy, Nikolaj Coster, Michelle Fairley, Lena Headey, Emilia Clarke, Iain Glen, Aidan Gillen, Harry Lloyd, kit Harington, Sophie Turner."
+          ]
+        }
+      },
+      "parent": "node_11_1527793108511",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Game_of_Thrones",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_92_1527794136428",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": "Deu certo" },
+      "parent": "slot_1_1527786112494",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_3_1527786112494",
+      "previous_sibling": "handler_2_1527786112494"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": null,
+      "parent": "slot_1_1527786112494",
+      "context": { "pacbot": "@pacbot" },
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@pacbot",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_2_1527786112494",
       "previous_sibling": null
     },
     {
       "type": "slot",
       "title": null,
       "output": null,
-      "parent": "node_40_1527632749206",
+      "parent": "node_2_1526922781950",
       "context": null,
       "metadata": null,
-      "variable": "$talk",
+      "variable": "$pacbot",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_1_1527786112494",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Medicina"] } },
+      "parent": "node_2_1527793015471",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Greys_Anatomy",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_69_1527793905388",
+      "previous_sibling": "handler_68_1527793897256"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Nenhum"] } },
+      "parent": "node_2_1527793015471",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@How_I_met_your_mother",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_70_1527793911880",
+      "previous_sibling": "handler_69_1527793905388"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Nenhum"] } },
+      "parent": "node_2_1527793015471",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Stranger_Things",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_71_1527793920473",
+      "previous_sibling": "handler_70_1527793911880"
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": null,
+      "parent": "node_2_1527793015471",
+      "context": null,
+      "metadata": null,
+      "variable": "$pergunta",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_32_1527793725562",
+      "previous_sibling": "handler_71_1527793920473"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Crônicas de Gelo e Fogo"] } },
+      "parent": "node_2_1527793015471",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Game_of_Thrones",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_68_1527793897256",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": { "values": [""], "selection_policy": "sequential" }
+      },
+      "parent": "slot_12_1527776452964",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "nomatch",
+      "description": null,
+      "dialog_node": "handler_26_1527778963882",
+      "previous_sibling": "handler_13_1527776452964"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_12_1527776452964",
+      "context": { "pergunta": "@pergunta" },
+      "metadata": {},
+      "next_step": null,
+      "conditions": "@pergunta",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_13_1527776452964",
+      "previous_sibling": "handler_14_1527776452964"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_12_1527776452964",
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_14_1527776452964",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Não"] } },
+      "parent": "node_1_1527792953177",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Stranger_Things",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_31_1527793680211",
+      "previous_sibling": "handler_30_1527793674701"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Não"] } },
+      "parent": "node_1_1527792953177",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@How_I_met_your_mother",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_30_1527793674701",
+      "previous_sibling": "handler_29_1527793669496"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Sim"] } },
+      "parent": "node_1_1527792953177",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Greys_Anatomy",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_29_1527793669496",
+      "previous_sibling": "handler_28_1527793661557"
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": null,
+      "parent": "node_1_1527792953177",
+      "context": null,
+      "metadata": null,
+      "variable": "$pergunta",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_25_1527793643736",
+      "previous_sibling": "handler_31_1527793680211"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Sim"] } },
+      "parent": "node_1_1527792953177",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Game_of_Thrones",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_28_1527793661557",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_62_1527793786610",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_64_1527793786610",
+      "previous_sibling": "handler_63_1527793786610"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": null,
+      "parent": "slot_62_1527793786610",
+      "context": { "pergunta": "@pergunta" },
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@pergunta",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_63_1527793786610",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_25_1527793643736",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_27_1527793643736",
+      "previous_sibling": "handler_26_1527793643736"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": null,
+      "parent": "slot_25_1527793643736",
+      "context": { "pergunta": "@pergunta" },
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@pergunta",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_26_1527793643736",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_35_1527793735865",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_37_1527793735865",
+      "previous_sibling": "handler_36_1527793735865"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": null,
+      "parent": "slot_35_1527793735865",
+      "context": { "pergunta": "@pergunta" },
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@pergunta",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_36_1527793735865",
+      "previous_sibling": null
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": {},
+      "parent": "node_5_1527778110470",
+      "context": null,
+      "metadata": { "_customization": { "mcr": true } },
+      "variable": "$pergunta",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_6_1527778131856",
+      "previous_sibling": "handler_24_1527793596570"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Sim, Dark"] } },
+      "parent": "node_5_1527778110470",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Stranger_Things",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_24_1527793596570",
+      "previous_sibling": "handler_23_1527793588910"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Não"] } },
+      "parent": "node_5_1527778110470",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Greys_Anatomy",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_22_1527793579944",
+      "previous_sibling": "handler_21_1527793570819"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Sim, Friends"] } },
+      "parent": "node_5_1527778110470",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@How_I_met_your_mother",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_23_1527793588910",
+      "previous_sibling": "handler_22_1527793579944"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": { "values": ["Sim, Novela Deus salve o Rei da rede globo"] }
+      },
+      "parent": "node_5_1527778110470",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Game_of_Thrones",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_21_1527793570819",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "Eleven, Mike, Lucas, Dustin, Will Byers, Dr. Martins, Jonathan, Nancy."
+          ]
+        }
+      },
+      "parent": "node_10_1527793103708",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Stranger_Things",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_99_1527794256790",
+      "previous_sibling": "handler_98_1527794179743"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "Barney Stinson, Robin Scherbatsky, Ted Mosby, Lily Aldrin, Marshall Eriksen."
+          ]
+        }
+      },
+      "parent": "node_10_1527793103708",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@How_I_met_your_mother",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_98_1527794179743",
+      "previous_sibling": "handler_97_1527794172254"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "Meredith Grey, Derek Shepherd, Jackson Avery, Callie Torres, April Kepner, Alex Karev, Arizona Robbins, Cristina Yang, Miranda Bailey."
+          ]
+        }
+      },
+      "parent": "node_10_1527793103708",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Greys_Anatomy",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_97_1527794172254",
+      "previous_sibling": "handler_96_1527794166488"
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": null,
+      "parent": "node_10_1527793103708",
+      "context": null,
+      "metadata": null,
+      "variable": "$pergunta",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_53_1527793771427",
+      "previous_sibling": "handler_99_1527794256790"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "Daenerys Targaryen, Jon Snow, Gregor Clegane , Rainha Cersei Barat, Tyrion lannister, Arya Stark, Sansa Stark."
+          ]
+        }
+      },
+      "parent": "node_10_1527793103708",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Game_of_Thrones",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_96_1527794166488",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_44_1527793755174",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_46_1527793755175",
+      "previous_sibling": "handler_45_1527793755175"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": null,
+      "parent": "slot_44_1527793755174",
+      "context": { "pergunta": "@pergunta" },
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@pergunta",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_45_1527793755175",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Estados Unidos"] } },
+      "parent": "node_13_1527793207943",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Stranger_Things",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_115_1527794381527",
+      "previous_sibling": "handler_114_1527794366017"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Estados Unidos"] } },
+      "parent": "node_13_1527793207943",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@How_I_met_your_mother",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_114_1527794366017",
+      "previous_sibling": "handler_113_1527794362114"
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": null,
+      "parent": "node_13_1527793207943",
+      "context": null,
+      "metadata": null,
+      "variable": "$pergunta",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_65_1527793791064",
+      "previous_sibling": "handler_115_1527794381527"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Estados Unidos"] } },
+      "parent": "node_13_1527793207943",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Greys_Anatomy",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_113_1527794362114",
+      "previous_sibling": "handler_112_1527794355268"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Estados Unidos"] } },
+      "parent": "node_13_1527793207943",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Game_of_Thrones",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_112_1527794355268",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_50_1527793765579",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_52_1527793765579",
+      "previous_sibling": "handler_51_1527793765579"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": null,
+      "parent": "slot_50_1527793765579",
+      "context": { "pergunta": "@pergunta" },
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@pergunta",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_51_1527793765579",
+      "previous_sibling": null
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": {},
+      "parent": "node_40_1527632749206",
+      "context": null,
+      "metadata": {},
+      "variable": "$pergunta",
       "next_step": null,
       "conditions": null,
       "description": null,
@@ -585,10 +2073,10 @@
     {
       "type": "event_handler",
       "title": null,
-      "output": { "text": { "values": ["Eu sou de áries", "sou ariana"] } },
+      "output": { "text": { "values": ["Eu sou de aries", "sou ariana"] } },
       "parent": "node_40_1527632749206",
       "context": null,
-      "metadata": null,
+      "metadata": {},
       "next_step": null,
       "conditions": "@signo",
       "event_name": "generic",
@@ -617,17 +2105,255 @@
       "previous_sibling": null
     },
     {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Adolescentes maiores 16 anos"] } },
+      "parent": "node_9_1527776390888",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@How_I_met_your_mother",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_19_1527793488859",
+      "previous_sibling": "handler_24_1527778897330"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Diversos"] } },
+      "parent": "node_9_1527776390888",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Stranger_Things",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_20_1527793496316",
+      "previous_sibling": "handler_19_1527793488859"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Adultos maiores de 18 anos"] } },
+      "parent": "node_9_1527776390888",
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "@Game_of_Thrones",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_24_1527778897330",
+      "previous_sibling": "handler_23_1527778879362"
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": {},
+      "parent": "node_9_1527776390888",
+      "context": null,
+      "metadata": { "_customization": { "mcr": null } },
+      "variable": "$pergunta",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_12_1527776452964",
+      "previous_sibling": "handler_20_1527793496316"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["Jovens entre 18 e 34 anos"] } },
+      "parent": "node_9_1527776390888",
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "@Greys_Anatomy",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_23_1527778879362",
+      "previous_sibling": null
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": null,
+      "parent": "node_3_1527793030581",
+      "context": null,
+      "metadata": null,
+      "variable": "$pergunta",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_38_1527793742189",
+      "previous_sibling": "handler_79_1527794028874"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["2 temporadas"] } },
+      "parent": "node_3_1527793030581",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Stranger_Things",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_79_1527794028874",
+      "previous_sibling": "handler_78_1527794023544"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["14 temporadas"] } },
+      "parent": "node_3_1527793030581",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Greys_Anatomy",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_77_1527794019604",
+      "previous_sibling": "handler_76_1527794007588"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["9 temporadas"] } },
+      "parent": "node_3_1527793030581",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@How_I_met_your_mother",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_78_1527794023544",
+      "previous_sibling": "handler_77_1527794019604"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["8 temporadas"] } },
+      "parent": "node_3_1527793030581",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Game_of_Thrones",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_76_1527794007588",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {},
+      "parent": "slot_41_1527793748391",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_43_1527793748391",
+      "previous_sibling": "handler_42_1527793748391"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": null,
+      "parent": "slot_41_1527793748391",
+      "context": { "pergunta": "@pergunta" },
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@pergunta",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_42_1527793748391",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["24 episodios"] } },
+      "parent": "node_5_1527793043328",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@How_I_met_your_mother",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_82_1527794059389",
+      "previous_sibling": "handler_81_1527794054827"
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": null,
+      "parent": "node_5_1527793043328",
+      "context": null,
+      "metadata": null,
+      "variable": "$pergunta",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_41_1527793748391",
+      "previous_sibling": "handler_83_1527794069551"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["8 episodios"] } },
+      "parent": "node_5_1527793043328",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Stranger_Things",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_83_1527794069551",
+      "previous_sibling": "handler_82_1527794059389"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["25 episodios"] } },
+      "parent": "node_5_1527793043328",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Greys_Anatomy",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_81_1527794054827",
+      "previous_sibling": "handler_80_1527794049534"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": { "text": { "values": ["10 episodios"] } },
+      "parent": "node_5_1527793043328",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": "@Game_of_Thrones",
+      "event_name": "generic",
+      "description": null,
+      "dialog_node": "handler_80_1527794049534",
+      "previous_sibling": null
+    },
+    {
       "type": "frame",
       "title": null,
       "output": {},
       "parent": null,
       "context": null,
-      "metadata": { "fallback": "leave" },
+      "metadata": {},
       "next_step": null,
-      "conditions": "#Perguntas",
+      "conditions": "#perguntas_aleatoria",
       "digress_in": "does_not_return",
       "description": null,
-      "dialog_node": "node_12_1527630956170",
+      "dialog_node": "node_40_1527632749206",
       "digress_out": "allow_all",
       "previous_sibling": "node_34_1527631980988",
       "digress_out_slots": "not_allowed"
@@ -643,12 +2369,142 @@
       },
       "parent": null,
       "context": null,
-      "metadata": {},
+      "metadata": { "fallback": "leave" },
       "next_step": null,
       "conditions": "#saudacao",
+      "digress_in": "does_not_return",
       "description": null,
       "dialog_node": "node_2_1526922781950",
+      "digress_out": "allow_all",
       "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "frame",
+      "title": null,
+      "output": {},
+      "parent": null,
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "#pergunta02",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_9_1527776390888",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1527775661864",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "frame",
+      "title": null,
+      "output": {},
+      "parent": null,
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "#pergunta11",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_11_1527793108511",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_6_1527793056993",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "frame",
+      "title": null,
+      "output": {},
+      "parent": null,
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "#pergunta14",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_8_1527793093955",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_9_1527793098698",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "frame",
+      "title": null,
+      "output": {},
+      "parent": null,
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "#pergunta10",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_6_1527793056993",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_7_1527793061555",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "frame",
+      "title": null,
+      "output": {},
+      "parent": null,
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "#pergunta16",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_13_1527793207943",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_14_1527793211348",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "frame",
+      "title": null,
+      "output": {},
+      "parent": null,
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "#pergunta15",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_14_1527793211348",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_8_1527793093955",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "frame",
+      "title": null,
+      "output": {},
+      "parent": null,
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "#pergunta07",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_3_1527793030581",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_4_1527793033527",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "frame",
+      "title": null,
+      "output": {},
+      "parent": null,
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "#pergunta12",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_10_1527793103708",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_11_1527793108511",
+      "digress_out_slots": "not_allowed"
     },
     {
       "type": "standard",
@@ -678,12 +2534,124 @@
       "context": null,
       "metadata": {},
       "next_step": null,
-      "conditions": "#perguntas_aleatoria",
+      "conditions": "#pergunta06",
       "digress_in": "does_not_return",
       "description": null,
-      "dialog_node": "node_40_1527632749206",
+      "dialog_node": "node_4_1527793033527",
       "digress_out": "allow_all",
-      "previous_sibling": "node_12_1527630956170",
+      "previous_sibling": "node_2_1527793015471",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "frame",
+      "title": null,
+      "output": {},
+      "parent": null,
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "#pergunta05",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_2_1527793015471",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1527792953177",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "frame",
+      "title": null,
+      "output": {},
+      "parent": null,
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "#pergunta04",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_1_1527792953177",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_5_1527778110470",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "frame",
+      "title": null,
+      "output": {},
+      "parent": null,
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "#pergunta13",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_9_1527793098698",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_10_1527793103708",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "frame",
+      "title": null,
+      "output": {},
+      "parent": null,
+      "context": null,
+      "metadata": { "fallback": "leave" },
+      "next_step": null,
+      "conditions": "#pergunta01",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_1_1527775661864",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_40_1527632749206",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "frame",
+      "title": null,
+      "output": {},
+      "parent": null,
+      "context": null,
+      "metadata": { "fallback": "leave" },
+      "next_step": null,
+      "conditions": "#pergunta03",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_5_1527778110470",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_9_1527776390888",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "frame",
+      "title": null,
+      "output": {},
+      "parent": null,
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "#pergunta08",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_5_1527793043328",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_3_1527793030581",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "frame",
+      "title": null,
+      "output": {},
+      "parent": null,
+      "context": null,
+      "metadata": {},
+      "next_step": null,
+      "conditions": "#pergunta09",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_7_1527793061555",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_5_1527793043328",
       "digress_out_slots": "not_allowed"
     },
     {
@@ -707,5 +2675,6 @@
   ],
   "workspace_id": "e8b85458-9a84-46af-ba77-51259363a441",
   "counterexamples": [],
+  "system_settings": null,
   "learning_opt_out": false
 }
